@@ -11,6 +11,11 @@ $maincolor2: #9a0002;
 body {
   background-color: $maincolor;
 }
+.logo {
+  position: absolute;
+  left: -50px;
+  height: 60px;
+}
 .header {
   display: block;
   width: 80vw;
@@ -255,6 +260,7 @@ nav {
       transition:
         visibility 0.3s linear,
         opacity 0.3s linear;
+      transition-delay: 0.2s;
     }
     li:hover {
       .info {
@@ -265,5 +271,51 @@ nav {
         transform: scale(1.1);
       }
     }
+  }
+}
+#services:checked + label + .hidden-box {
+  .service-list {
+    display: flex;
+    list-style: none;
+
+    li {
+      background-color: #efe6de;
+      color: #9a0002;
+      padding: 30px 15px 80px 15px;
+      border-radius: 10px;
+      height: 400px;
+    }
+    h4 {
+      padding-bottom: 50px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  box-sizing: border-box;
+  display: block;
+  width: 80vw;
+  height: 500px;
+  background-color: $maincolor2;
+  position: absolute;
+  margin-top: 14.6px;
+  left: 10vw;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .cross {
+    width: 70vw;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .video {
+    height: 400px;
+    border-radius: 15px;
+    object-fit: none;
   }
 }

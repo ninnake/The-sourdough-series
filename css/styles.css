@@ -9,6 +9,12 @@ body {
   background-color: #efe6de;
 }
 
+.logo {
+  position: absolute;
+  left: -50px;
+  height: 60px;
+}
+
 .header {
   display: block;
   width: 80vw;
@@ -253,6 +259,7 @@ nav ul li label {
   line-height: 20px;
   opacity: 0;
   transition: visibility 0.3s linear, opacity 0.3s linear;
+  transition-delay: 0.2s;
 }
 #categories:checked + label + .hidden-box ul li:hover .info {
   visibility: visible;
@@ -260,6 +267,51 @@ nav ul li label {
 }
 #categories:checked + label + .hidden-box ul li:hover img {
   transform: scale(1.1);
+}
+
+#services:checked + label + .hidden-box .service-list {
+  display: flex;
+  list-style: none;
+}
+#services:checked + label + .hidden-box .service-list li {
+  background-color: #efe6de;
+  color: #9a0002;
+  padding: 30px 15px 80px 15px;
+  border-radius: 10px;
+  height: 400px;
+}
+#services:checked + label + .hidden-box .service-list h4 {
+  padding-bottom: 50px;
+}
+#services:checked + label + .hidden-box .service-list p {
+  font-size: 16px;
+}
+#services:checked + label + .hidden-box {
+  box-sizing: border-box;
+  display: block;
+  width: 80vw;
+  height: 500px;
+  background-color: #9a0002;
+  position: absolute;
+  margin-top: 14.6px;
+  left: 10vw;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#services:checked + label + .hidden-box .cross {
+  width: 70vw;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#services:checked + label + .hidden-box .video {
+  height: 400px;
+  border-radius: 15px;
+  object-fit: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
