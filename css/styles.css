@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gravitas One";
+}
+
+body {
+  background-color: #efe6de;
+}
+
+header {
+  width: 80vw;
+  height: 500px;
+  background-color: #9a0002;
+  position: absolute;
+  left: 10vw;
+  border-radius: 15px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  color: #efe6de;
+  font-size: 100px;
+  text-align: center;
+  max-width: 70vw;
+}
+header h2 {
+  color: #efe6de;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.toasts {
+  list-style: none;
+  padding-top: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+.toasts li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.salmon {
+  width: 470px;
+  height: 480px;
+  position: absolute;
+  left: 5%;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+.salmon:hover {
+  opacity: 1;
+}
+
+.butter_empty {
+  opacity: 1;
+}
+
+.butter {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+.butter:hover {
+  opacity: 1;
+}
+
+.chocolate {
+  position: absolute;
+  left: 2.5%;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+.chocolate:hover {
+  opacity: 1;
+}
+
+.berry {
+  position: absolute;
+  width: 535px;
+  height: 540px;
+  left: -3%;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+.berry:hover {
+  opacity: 1;
+}
+
+.green {
+  position: absolute;
+  opacity: 0;
+  height: 510px;
+  width: 510px;
+  left: 0.5%;
+  top: -2%;
+  transition: opacity 0.5s linear;
+}
+.green:hover {
+  opacity: 1;
+}
+
+.banana {
+  position: absolute;
+  left: 7.5%;
+  top: -7%;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+}
+.banana:hover {
+  opacity: 1;
+}
+@media (max-width: 700px) {
+  body {
+    background-color: #9a0002;
+  }
+  header {
+    width: 100vw;
+    left: 0;
+    margin-top: 0;
+    position: relative;
+
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 50px;
+    }
+  }
+  img {
+    transform: scale(0.8);
+  }
+}
+/*# sourceMappingURL=styles.css.map */
