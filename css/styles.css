@@ -200,6 +200,10 @@ nav ul {
 }
 nav ul li label {
   color: #9a0002;
+  transition: color 0.3s linear;
+}
+nav ul li label:hover {
+  color: rgb(101, 0, 0);
 }
 
 #categories:checked + label + .hidden-box {
@@ -258,7 +262,9 @@ nav ul li label {
   border-radius: 10px;
   line-height: 20px;
   opacity: 0;
-  transition: visibility 0.3s linear, opacity 0.3s linear;
+  transition:
+    visibility 0.3s linear,
+    opacity 0.3s linear;
   transition-delay: 0.2s;
 }
 #categories:checked + label + .hidden-box ul li:hover .info {
@@ -313,5 +319,14 @@ nav ul li label {
   border-radius: 15px;
   object-fit: none;
 }
-
+footer {
+  background-color: #9a0002;
+  height: 10vh;
+  display: flex;
+  align-items: flex-end;
+  .rights {
+    font-size: 10px;
+    padding-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
